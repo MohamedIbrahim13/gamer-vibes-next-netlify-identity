@@ -3,7 +3,7 @@ import Image from "next/image"
 import { useContext } from "react"
 import AuthContext from "../context/authContext"
 
-export default function Navbar({ user, login }) {
+export default function Navbar() {
   const { user, login } = useContext(AuthContext)
   console.log(user)
   return (
