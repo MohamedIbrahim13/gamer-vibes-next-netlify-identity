@@ -3,11 +3,11 @@ import { useContext } from "react"
 import AuthContext from "../context/authContext"
 
 const Layout = ({ children }) => {
-  const { user, login } = useContext(AuthContext)
+  const { user, login, logout, authReady } = useContext(AuthContext)
 
   return (
     <div className="content">
-      <Navbar user={user} login={login} />
+      <Navbar user={user} login={login} logout={logout} authReady={authReady} />
       {children}
     </div>
   )

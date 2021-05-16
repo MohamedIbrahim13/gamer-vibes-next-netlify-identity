@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Gamer Vibes</title>
+        <title>Gamer Vibes | Home</title>
         <meta name="description" content="Guide for every gamer" />
       </Head>
       <div className={styles.home}>
